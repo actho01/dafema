@@ -240,11 +240,11 @@ a.none:hover {
 
 /* Hero */
 .hero_area {
-  background-image: url(img/gallery/carousel.jpeg);
+  background-image: url(img/loko1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 475px;
+  /*height: 475px;*/
   padding: 0;
 }
 .hero_content {
