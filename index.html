@@ -7,27 +7,42 @@
 <meta name="description" content="PT. Dafema Trans Logistics — an international freight forwarder, customs broker, and logistics service provider for air, sea, and land shipments.">
 
 <link rel="icon" type="image/png" href="img/logo-only.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="container-xl">
-    <a href="index.html" class="navbar-brand">
-      <img src="img/dafema-logo.png" alt="Dafema Trans Logistics">
-    </a>
-    <button class="navbar-toggler" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
-      <i class="bi bi-list" style="font-size:22px;"></i>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="layanan.html">Services</a></li>
-    </ul>
-  </div>
+  <header class="navbar navbar-expand-lg bg-white">
+    <div class="container-xl">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+            <img src="img/dafema-logo.png" alt="Dafema Trans Logistics">
+        </a>
+        
+        <!-- Tombol Hamburger -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list" style="font-size: 28px; color: #000;"></i>
+        </button>
+        
+        <!-- Menu yang bisa di-collapse -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <!-- ms-auto akan mendorong menu ke sebelah kanan -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active fw-bold">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link fw-bold">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="layanan.html" class="nav-link fw-bold">Services</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 
 <main>
@@ -300,7 +315,7 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
